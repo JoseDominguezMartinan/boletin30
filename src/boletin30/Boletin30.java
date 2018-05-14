@@ -21,10 +21,10 @@ public class Boletin30
     {
         // TODO code application logic here
         ArrayList<SeleccionFutbol>seleccion=new ArrayList();
-        Futbolista deGea=new Futbolista(1,"PT",1,"David","De Gea",26);
-        Entrenador DelBosque=new Entrenador(1,0,"Vicente","Del Bosque",60);
-        Masajista  pedrito=new Masajista("fisioterapia",5,32,"Pedro","Fernandez",30);
-        Seleccionador Aragones=new Seleccionador(70,"Luis","Aragones",70);
+        SeleccionFutbol deGea=new Futbolista(1,"PT",1,"David","De Gea",26);
+        SeleccionFutbol DelBosque=new Entrenador(1,0,"Vicente","Del Bosque",60);
+        SeleccionFutbol  pedrito=new Masajista("fisioterapia",5,32,"Pedro","Fernandez",30);
+        SeleccionFutbol Aragones=new Seleccionador(70,"Luis","Aragones",70);
         
         seleccion.add(deGea);
         seleccion.add(DelBosque);
@@ -33,17 +33,11 @@ public class Boletin30
         
         for(int i=0;i<seleccion.size();i++){
             System.out.println(seleccion.get(i).toString());
-            seleccion.get(i).concentrarse();
+          
         }
         
-        deGea.concentrarse();
-        deGea.entrevista();
-        DelBosque.concentrarse();
-        DelBosque.entrenar();
-        pedrito.concentrarse();
-        pedrito.darMasaxe();
-        Aragones.concentrarse();
-        Aragones.seleccionXogador();
+        
+      
         
         
     }
