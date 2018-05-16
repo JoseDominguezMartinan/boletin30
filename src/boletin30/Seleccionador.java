@@ -21,6 +21,52 @@ public class Seleccionador extends SeleccionFutbol
         super(id,nombre,apelidos,edade);
     }
 
+    public Integer getId()
+    {
+        return id;
+    }
+
+    public void setId(Integer id)
+    {
+        this.id = id;
+    }
+
+    public String getNombre()
+    {
+        return nombre;
+    }
+
+    public void setNombre(String nombre)
+    {
+        this.nombre = nombre;
+    }
+
+    public String getApelidos()
+    {
+        return apelidos;
+    }
+
+    public void setApelidos(String apelidos)
+    {
+        this.apelidos = apelidos;
+    }
+
+    public Integer getEdade()
+    {
+        return edade;
+    }
+
+    public void setEdade(Integer edade)
+    {
+        this.edade = edade;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Seleccionador "+nombre+" "+apelidos+" "+edade;
+    }
+
     @Override
     public void concentrarse()
     {

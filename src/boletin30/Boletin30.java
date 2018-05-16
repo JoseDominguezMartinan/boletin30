@@ -35,6 +35,7 @@ public class Boletin30
             System.out.println(seleccion.get(i).toString());
           
         }
+        deGea.concentrarse();
         
         
       
